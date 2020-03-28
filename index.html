@@ -106,23 +106,23 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script>
       $(() => {
-        // TODO: #1
+        // #1
         console.log("Let’s get ready to party with jQuery!");
-        // TODO: #2
+        // #2
         $("article img").addClass("image-center");
-        // TODO: #3
+        // #3
         $("article p:last").remove();
-        // TODO: #4
+        // #4
         const randomNumber = Math.floor(Math.random() * 101);
         const randomPixelSize = `${randomNumber}px`;
         $("#title").css("fontSize", randomPixelSize);
-        // TODO: #5
+        // #5
         $("ol").append("<li><h3>whatever you want</h3></li>");
-        // TODO: #6
+        // #6
         $("aside").html(
           "<p>I am a paragraph apologizing for the list's existence."
         );
-        // TODO: #7
+        // #7
         $("input").on("change", function(event) {
           const red = $("input")
             .eq(0)
@@ -136,7 +136,7 @@
           const rgb = `rgb(${red}, ${green}, ${blue})`;
           $("body").css("background-color", rgb);
         });
-        // TODO: #8
+        // #8
         $("img").on("click", event => {
           $(event.target).remove();
         });
